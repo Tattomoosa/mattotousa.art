@@ -1,0 +1,10 @@
+{% macro framed_img(src) %}
+<div class="framed-image">
+	<div class="frame">
+		<div class="matte">
+			<div class="inset-shadow"> </div>
+			<img class="image" src="{{ src }}"/>
+		</div>
+	</div>
+</div>
+{% endmacro framed_img%}

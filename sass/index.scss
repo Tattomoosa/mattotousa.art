@@ -1,0 +1,104 @@
+@import "./_variables.scss";
+@import "./layout.scss";
+@import "./homepage.scss";
+@import "./images.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+// reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+a {
+  color: $base-link;
+  &:visited {
+    color: $visited-link;
+  }
+  &:hover {
+    color: $hover-link;
+  }
+  &:active {
+    color: $active-link;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.position-relative {
+  position: relative;
+}
+
+// site container (controls width and centering)
+.container {
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+  // background-color: red;
+
+  @media screen and (min-width: 1221px) {
+    margin: auto;
+  }
+
+  @media screen and (max-width: 1220px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media screen and (max-width: 900px) {
+    &.no-mobile-padding {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.page-height {
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.position-absolute {
+  position: absolute;
+  width: 100vw;
+}

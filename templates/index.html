@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% import "macros/images.html" as images %}
+
+{% block content %}
+
+<div class="homepage scroller">
+  <section class="page-height">
+    <div class="center">
+      {{ images::framed_img(src="/homepage-images/into-the-golden-west.png") }}
+    </div>
+  </section>
+  <section class="page-height">
+    <div class="center">
+      {{ images::framed_img(src="/homepage-images/the-waves.png") }}
+    </div>
+  </section>
+  <section class="page-height">
+    <div class="center">
+      {{ images::framed_img(src="/homepage-images/into-the-golden-west.png") }}
+    </div>
+  </section>
+  <section class="page-height">
+    <div class="center">
+      {{ images::framed_img(src="/homepage-images/the-waves.png") }}
+    </div>
+  </section>
+  <section class="page-height">
+    <div class="center">
+      {{ images::framed_img(src="/homepage-images/into-the-golden-west.png") }}
+    </div>
+  </section>
+  <section class="page-height">
+    <div class="center">
+      {{ images::framed_img(src="/homepage-images/the-waves.png") }}
+    </div>
+  </section>
+  <section class="page-height">
+    <div class="center">
+      {{ images::framed_img(src="/homepage-images/into-the-golden-west.png") }}
+    </div>
+  </section>
+  <section class="page-height">
+    <div class="center">
+      {{ images::framed_img(src="/homepage-images/the-waves.png") }}
+    </div>
+  </section>
+</div>
+
+<script type="module" defer>
+  import Scroller from "/scripts/Scroller.js";
+
+  const scroller = new Scroller(".scroller")
+
+</script>
+
+
+{% endblock content %}

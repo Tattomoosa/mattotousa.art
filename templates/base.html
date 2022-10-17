@@ -1,0 +1,29 @@
+{% import "macros/layout.html" as layout %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt O'Tousa | Painter</title>
+    <meta name="description" content="Matt O'Tousa is a painter based in Portland, OR.">
+    <link rel="stylesheet" href={{ get_url(path="index.css" ) }}>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+</head>
+
+<body class="no-js">
+    <!-- this makes adjusting css possible if js is present -->
+    <script>document.body.classList.remove('no-js');</script>
+
+    {{ layout::header() }}
+
+    <div class="fill-page">
+        <!-- Per-page content -->
+        {% block content %}
+        {% endblock %}
+
+    </div>
+    {{ layout::footer() }}
+</body>
+</html>

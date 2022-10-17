@@ -1,0 +1,47 @@
+$matte-size: 40px;
+$matte-border: 4px;
+
+.framed-image {
+	position: relative;
+	display: inline-block;
+	width: 800px;
+	box-shadow: 0 5px 5px 5px rgba(0,0,0,.5);
+
+	.frame {
+		position: relative;
+		border: 20px solid #333;
+	}
+
+	.matte {
+		background: white;
+		padding: $matte-size;
+		box-shadow: inset 0 3px 10px 10px rgba(0,0,0,0.2);
+		border: 4px solid #222;
+		border-top-color: #111;
+		border-bottom-color: #444;
+	}
+
+	.inset-shadow {
+		box-shadow: inset 0 0 4px 4px rgba(0,0,0,0.4);
+		border: 4px solid #ccc;
+		border-top-color: #999;
+		border-bottom-color: #ddd;
+		box-sizing: border-box;
+		position: absolute;
+		z-index: 1000;
+		inset: $matte-size;
+		// why????
+		// bottom: calc(#{$matte-size} + #{$matte-border})
+		bottom: $matte-size + $matte-border;
+	}
+
+	.image {
+		width: 100%;
+		height: auto;
+	}
+
+	@media screen and (max-width: 900px) {
+		width: 80vw;
+	}
+
+}

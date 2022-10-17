@@ -1,0 +1,117 @@
+@import "./_variables.scss";
+
+html {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Staatliches";
+  line-height: 0.8;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: block;
+  background-color: $bg-color;
+}
+
+footer {
+  overflow-y: hidden;
+  height: $footer-height;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-top: 2px;
+  background: rgba($bg-color, 0.2);
+  .made-with {
+    margin-top: 14px;
+  }
+}
+
+.nav-logo {
+  font-family: "Staatliches";
+  text-decoration: none;
+  font-size: 32px;
+  color: $header-color;
+  &:visited {
+    color: $header-color;
+  }
+}
+
+header {
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.fill-page {
+  position: absolute;
+  inset: 0;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.flex {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: $nav-height;
+}
+
+.nav-link-text {
+  display: inline-block;
+  color: $text-color;
+  text-decoration: none;
+  line-height: $nav-height;
+  &:visited {
+    color: $text-color;
+  }
+  &:hover {
+    color: $hover-link;
+  }
+  &:active {
+    color: $active-link;
+  }
+  &.nav-link-active {
+    color: $active-link;
+  }
+  @media screen and (min-width: $break-to-mobile) {
+    transition-property: transform, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+    &:hover {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+    &:active {
+      transition-duration: 0.1s;
+      transform: scale3d(1.2, 1.2, 1) rotate(5deg);
+    }
+  }
+}
+
+.icon-link {
+  font-size: 32px;
+  margin: 0;
+  color: $text-color;
+  i {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.flex-spacer {
+  flex-grow: 1;
+} 
+

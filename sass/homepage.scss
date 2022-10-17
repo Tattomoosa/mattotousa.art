@@ -1,0 +1,7 @@
+@import "./_variables.scss";
+
+.homepage {
+  .page-height:first-child {
+    height: calc(100vh - #{$header-height})
+  }
+}
