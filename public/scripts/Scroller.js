@@ -10,6 +10,16 @@ class Scroller {
 		this.initPages();
 		this.initScrollWheelBehavior();
 		this.initTouchScrollBehavior();
+		this.initWindowResizeBehavior();
+	}
+
+	initWindowResizeBehavior() {
+		window.addEventListener("resize", () => {
+			requestAnimationFrame(() => {
+				if (!this.isScrolling)
+					this.currentPage.scrollIntoView(true);
+			})
+		})
 	}
 
 	initPages() {

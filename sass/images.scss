@@ -3,9 +3,9 @@ $matte-border: 4px;
 
 .framed-image {
 	position: relative;
-	display: inline-block;
+	// display: inline-block;
 	width: 800px;
-	box-shadow: 0 5px 5px 5px rgba(0,0,0,.5);
+	box-shadow: 0 5px 5px 5px rgba(0,0,0,.3);
 
 	.frame {
 		position: relative;

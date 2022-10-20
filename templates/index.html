@@ -5,53 +5,40 @@
 {% block content %}
 
 <div class="homepage scroller">
+  <div class="container">
+  {% set paintings_section = get_section(path="paintings/_index.md") %}
+  {% for page in paintings_section.pages %}
+  {% set image_path = page.path ~ 'img.png' %}
   <section class="page-height">
-    <div class="center">
-      {{ images::framed_img(src="/homepage-images/into-the-golden-west.png") }}
-    </div>
+      <div class="flex center-vertically art-scroller-parent">
+        <div class="artwork">
+          {{ images::framed_img(src=image_path) }}
+        </div>
+        <div class="artist-statement-parent">
+          <div class="artist-statement">
+            <h1>
+              {{ page.title}}
+            </h1>
+            <div class="about-text">
+              <p>
+                {{ page.date }} <br/>
+                {{ page.extra.width }}x{{page.extra.height }} 
+                {{ page.extra.medium }} on {{ page.extra.canvas }}
+              </p>
+            </div>
+          {# {{ page.content | safe }} #}
+          </div>
+        </div>
+      </div>
   </section>
-  <section class="page-height">
-    <div class="center">
-      {{ images::framed_img(src="/homepage-images/the-waves.png") }}
-    </div>
-  </section>
-  <section class="page-height">
-    <div class="center">
-      {{ images::framed_img(src="/homepage-images/into-the-golden-west.png") }}
-    </div>
-  </section>
-  <section class="page-height">
-    <div class="center">
-      {{ images::framed_img(src="/homepage-images/the-waves.png") }}
-    </div>
-  </section>
-  <section class="page-height">
-    <div class="center">
-      {{ images::framed_img(src="/homepage-images/into-the-golden-west.png") }}
-    </div>
-  </section>
-  <section class="page-height">
-    <div class="center">
-      {{ images::framed_img(src="/homepage-images/the-waves.png") }}
-    </div>
-  </section>
-  <section class="page-height">
-    <div class="center">
-      {{ images::framed_img(src="/homepage-images/into-the-golden-west.png") }}
-    </div>
-  </section>
-  <section class="page-height">
-    <div class="center">
-      {{ images::framed_img(src="/homepage-images/the-waves.png") }}
-    </div>
-  </section>
+  {% endfor %}
+  </div>
 </div>
 
 <script type="module" defer>
   import Scroller from "/scripts/Scroller.js";
 
   const scroller = new Scroller(".scroller")
-
 </script>
 
 

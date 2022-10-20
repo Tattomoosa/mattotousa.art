@@ -1,21 +1,21 @@
 $base-link: #87afd7;
 $visited-link: #5f5f87;
 $active-link: #ff69dc;
-$hover-link: #a5d1e6;
+$hover-link: black;
 
 $nav-height: 50px;
 $header-height: 50px;
 $footer-height: 50px;
 $nav-line: black;
 
-$header-color: #aaa;
+$header-color: #666;
 $text-color: $header-color;
 
 // $bg-color: #ccc0ae;
 // $bg-color: #dcd0bf;
-$bg-color: #eef0f1;
+// $bg-color: #eef0f1;
 // $bg-color: black;
-// $bg-color: white;
+$bg-color: white;
 $container-width: 1200px;
 $half-container-width: calc($container-width / 2);
 

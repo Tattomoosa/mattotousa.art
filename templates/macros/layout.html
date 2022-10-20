@@ -1,7 +1,16 @@
 {% macro header() %}
-<header>
+<header style="position: absolute; z-index: 9999;">
   <div class="container flex">
     <a href="/" class="nav-logo">Matt O'Tousa</a>
+    <div class="flex-spacer"></div>
+    <ul class="nav-links">
+      <li>
+        <a class="nav-link-text" href="/">Gallery</a>
+      </li>
+      <li>
+        <a class="nav-link-text" href="/about">About</a>
+      </li>
+    </ul>
   </div>
 </header>
 {% endmacro header %}

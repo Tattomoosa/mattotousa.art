@@ -1,9 +1,11 @@
 @import "./_variables.scss";
 @import "./layout.scss";
-@import "./homepage.scss";
 @import "./images.scss";
+@import "./homepage.scss";
+@import "./about.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap');
 
 // reset
 * {
@@ -90,6 +92,12 @@ p {
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
+}
+
+.center-vertically {
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0,-50%, 0)
 }
 
 .page-height {
