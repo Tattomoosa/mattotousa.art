@@ -1,6 +1,9 @@
 @import "./_variables.scss";
 
 .homepage {
+  section {
+    overflow: hidden;
+  }
   .art-scroller-parent {
     justify-content: center;
     flex-direction: row;
@@ -11,6 +14,8 @@
   }
   .artwork {
     flex-grow: 0;
+    max-width: 600px;
+    max-height: 100%;
   }
   .artist-statement-parent {
     flex: 1;

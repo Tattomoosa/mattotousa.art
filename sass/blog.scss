@@ -1,0 +1,28 @@
+@import "./_variables.scss";
+
+.blog-post-container {
+    margin: auto;
+    margin-top: $nav-height;
+    overflow-y: scroll;
+}
+.blog-post {
+    margin: auto;
+    max-width: 720px;
+}
+.blog-heading {
+    margin: 80px 0 40px;
+    h1 {
+        font-size: 45px;
+    }
+    .date {
+        font-size: 20px;
+    }
+}
+
+.markdown-content {
+    font-size: 18px;
+    color: #444;
+    p + p {
+        text-indent: 40px;
+    }
+}

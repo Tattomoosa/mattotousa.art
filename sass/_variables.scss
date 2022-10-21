@@ -4,8 +4,8 @@ $active-link: #ff69dc;
 $hover-link: black;
 
 $nav-height: 50px;
-$header-height: 50px;
-$footer-height: 50px;
+$header-height: $nav-height;
+$footer-height: $nav-height;
 $nav-line: black;
 
 $header-color: #666;

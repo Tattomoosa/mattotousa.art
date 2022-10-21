@@ -4,7 +4,9 @@ $matte-border: 4px;
 .framed-image {
 	position: relative;
 	// display: inline-block;
-	width: 800px;
+	// width: 800px;
+	// max-width: 100%;
+	// max-height: 100%;
 	box-shadow: 0 5px 5px 5px rgba(0,0,0,.3);
 
 	.frame {
@@ -36,8 +38,8 @@ $matte-border: 4px;
 	}
 
 	.image {
-		width: 100%;
-		height: auto;
+		max-width: 100%;
+		max-height: 100%;
 	}
 
 	@media screen and (max-width: 900px) {

@@ -5,10 +5,10 @@ class Scroller {
 		this.currentPage = null; // html element
 		this.isScrolling = false;
 		this.lastScrollPosition = window.pageYOffset;
-		this.scrollTimeout = 400;
+		this.scrollTimeout = 600;
 		this.touchStart = null; // { x: number, y: number }
 		this.initPages();
-		this.initScrollWheelBehavior();
+		this.initScrollWheelBehavior(this.scrollTimeout);
 		this.initTouchScrollBehavior();
 		this.initWindowResizeBehavior();
 	}
@@ -40,8 +40,12 @@ class Scroller {
 			event.preventDefault();
 			event.stopPropagation();
 			const deltaY = event.deltaY;
+			console.log(deltaY);
 			if (deltaY === 0)
 				return;
+			if (Math.abs(deltaY) < 15)
+				return;
+			console.log("SCROLLING");
 
 			if (deltaY > 0)
 				this.scrollDown();
@@ -62,7 +66,8 @@ class Scroller {
 			this.touchStart = null;
 		})
 		window.addEventListener("touchmove", event => {
-			if (!this.touchStart)
+			const { touchStart } = this;
+			if (!touchStart)
 				return;
 			
 			const touchEvent = event.touches[0];
@@ -84,10 +89,15 @@ class Scroller {
 	}
 
 	scrollToPage(page) {
+		console.log(page, this.isScrolling);
 		if (!page || this.isScrolling)
 			return;
 		this.currentPage = page
-		page.scrollIntoView(true);
+		page.scrollIntoView({
+			behavior: "smooth",
+			block: "nearest",
+			inline: "start"
+		});
 		this.isScrolling = true;
 		setTimeout(() => {this.isScrolling = false}, this.scrollTimeout);
 	}
