@@ -1,10 +1,11 @@
-{% macro framed_img(src) %}
+{% macro framed_img(src, width, height) %}
 <div class="framed-image">
+	{% set size_factor = 18 %}
 	<div class="frame">
 		<div class="matte">
 			<div class="inset-shadow"> </div>
-			<img class="image" src="{{ src }}"/>
+			<img class="image" style="width: {{ width * size_factor }}px; height: {{ height * size_factor }}px;" src="{{ src }}"/>
 		</div>
 	</div>
 </div>
-{% endmacro framed_img%}
+{% endmacro framed_img %}
