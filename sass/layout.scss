@@ -1,6 +1,7 @@
 @import "./_variables.scss";
 
 html {
+  font-family: "Lora", serif;
 }
 
 h1,
@@ -9,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Staatliches";
+  font-family: "Lora", serif;
   line-height: 0.8;
 }
 
@@ -37,7 +38,8 @@ footer {
 }
 
 .nav-logo {
-  font-family: "Staatliches";
+  font-family: "Lora", serif;
+  // font-family: "Staatliches";
   text-decoration: none;
   font-size: 32px;
   color: $header-color;
@@ -56,7 +58,6 @@ header {
   position: absolute;
   inset: 0;
   overflow-y: hidden;
-  scroll-behavior: smooth;
 }
 
 .flex {
@@ -94,6 +95,7 @@ header {
     transition-property: transform, color;
     transition-duration: 0.15s;
     transition-timing-function: ease-out;
+    /*
     &:hover {
       transform: scale3d(1.1, 1.1, 1);
     }
@@ -101,6 +103,7 @@ header {
       transition-duration: 0.1s;
       transform: scale3d(1.2, 1.2, 1) rotate(5deg);
     }
+    */
   }
 }
 

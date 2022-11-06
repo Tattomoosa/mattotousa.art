@@ -1,12 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div style="height: 50px;"></div>
-<div class="container page-height">
-{% for page in section.pages %}
-    <a href="{{ page.permalink | safe }}">
-        <h2>{{page.title}}</h2>
-    </a>
-{% endfor %}
+<div class="blog-page-container">
+    <div class="container page-height">
+        <div style="height: 50px;"></div>
+        <ul class="blog-post-links">
+            {% for page in section.pages %}
+            <li class="blog-post-link">
+                <a href="{{ page.permalink | safe }}">
+                    {{page.title}}
+                </a>&nbsp;|&nbsp;
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 {% endblock content %}

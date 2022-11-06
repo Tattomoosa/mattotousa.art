@@ -4,8 +4,8 @@ date="2022-07-01"
 [extra]
 medium="oil"
 canvas="canvas"
-width=11
-height=7
+width=14
+height=11
 +++
 
 DATE IS WRONG

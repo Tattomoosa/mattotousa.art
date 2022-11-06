@@ -1,7 +1,9 @@
 +++
-title="On Photographs and Paintings"
+title="On Photographs & Paintings"
 date=2022-10-18
 +++
+
+{{ quote(text="A painting is not a picture of an experience, but it is the experience", author="Mark Rothko") }}
 
 I recently got a camera to photograph paintings with, so of course I've
 also taken it out to shoot photos because why not.
@@ -28,9 +30,4 @@ The magic of photography, I think, is knowing that the moment you are seeing
 is a real moment, in a way painting never is.
 Very rare events caught in photography are *exhilerating*
 
-> ...the paint, in which one follows the traces of the painter's immediate 
-gestures.
-This has the effect of closing the distance in time between the painting 
-of the picture and one's own act of looking at it.
->
-> -- John Berger, *Ways of Seeing*
+{{ quote(text="...the paint, in which one follows the traces of the painter's immediate gestures.  This has the effect of closing the distance in time between the painting of the picture and one's own act of looking at it.", author="John Berger", work="Ways of Seeing") }}

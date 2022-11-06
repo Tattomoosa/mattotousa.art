@@ -1,5 +1,7 @@
-$matte-size: 40px;
-$matte-border: 4px;
+$matte-size: 18px;
+$matte-border: 2px;
+$frame-border: 2px;
+$frame-size: 6px;
 
 .framed-image {
 	position: relative;
@@ -11,30 +13,30 @@ $matte-border: 4px;
 
 	.frame {
 		position: relative;
-		border: 20px solid #333;
+		border: $frame-size solid #333;
 	}
 
 	.matte {
 		background: white;
 		padding: $matte-size;
-		box-shadow: inset 0 3px 10px 10px rgba(0,0,0,0.2);
-		border: 4px solid #222;
+		box-shadow: inset 0 3px 4px 4px rgba(0,0,0,0.1);
+		border: $frame-border solid #222;
 		border-top-color: #111;
 		border-bottom-color: #444;
 	}
 
 	.inset-shadow {
-		box-shadow: inset 0 0 4px 4px rgba(0,0,0,0.4);
-		border: 4px solid #ccc;
+		box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.4);
+		border: $matte-border solid #ccc;
 		border-top-color: #999;
-		border-bottom-color: #ddd;
+		border-bottom-color: #eee;
 		box-sizing: border-box;
 		position: absolute;
 		z-index: 1000;
 		inset: $matte-size;
 		// why????
 		// bottom: calc(#{$matte-size} + #{$matte-border})
-		bottom: $matte-size + $matte-border;
+		bottom: $matte-size + $matte-border + $frame-border;
 	}
 
 	.image {
@@ -42,8 +44,10 @@ $matte-border: 4px;
 		max-height: 100%;
 	}
 
+	/*
 	@media screen and (max-width: 900px) {
 		width: 80vw;
 	}
+	*/
 
 }

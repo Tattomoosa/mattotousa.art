@@ -1,0 +1,11 @@
+<blockquote>
+	<p>
+		{{ text }}
+	</p>
+	<div class="quote-attribution">
+		&mdash; {{ author }}
+		{%- if work -%}
+			, <em>{{ work }}</em>
+		{% endif %}
+	</div>
+</blockquote>

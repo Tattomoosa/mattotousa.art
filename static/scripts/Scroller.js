@@ -1,3 +1,17 @@
+const PAGE_PARAM = "page";
+
+const updateUrlParam = (param, value) => {
+	const url = new URL(window.location.href);
+	const params = url.searchParams;
+	params.set(param, value);
+	window.history.replaceState('', '', url.href);
+}
+
+const getUrlParam = (param) => {
+	const url = new URL(window.location.href);
+	return url.searchParams.get(param);
+}
+
 class Scroller {
 	constructor(parentQuery) {
 		this.parentEl = document.querySelector(parentQuery);
@@ -11,6 +25,14 @@ class Scroller {
 		this.initScrollWheelBehavior(this.scrollTimeout);
 		this.initTouchScrollBehavior();
 		this.initWindowResizeBehavior();
+		this.updateFromUrl();
+	}
+
+	updateFromUrl() {
+		const pageParam = getUrlParam(PAGE_PARAM);
+		if (!pageParam)
+			return;
+		this.scrollToPage(this.pages[pageParam], false);
 	}
 
 	initWindowResizeBehavior() {
@@ -37,16 +59,13 @@ class Scroller {
 
 	initScrollWheelBehavior(timeout = 400) {
 		window.addEventListener("wheel", (event) => {
-			event.preventDefault();
+			// event.preventDefault();
 			event.stopPropagation();
 			const deltaY = event.deltaY;
-			console.log(deltaY);
 			if (deltaY === 0)
 				return;
 			if (Math.abs(deltaY) < 15)
 				return;
-			console.log("SCROLLING");
-
 			if (deltaY > 0)
 				this.scrollDown();
 			else if (deltaY < 0)
@@ -88,13 +107,13 @@ class Scroller {
 		this.scrollToPage(this.currentPage.previousPage);
 	}
 
-	scrollToPage(page) {
-		console.log(page, this.isScrolling);
+	scrollToPage(page, smooth=true) {
 		if (!page || this.isScrolling)
 			return;
 		this.currentPage = page
+		updateUrlParam(PAGE_PARAM, page.pageIndex);
 		page.scrollIntoView({
-			behavior: "smooth",
+			behavior: smooth ? "smooth" : "auto",
 			block: "nearest",
 			inline: "start"
 		});
