@@ -1,5 +1,5 @@
 +++
-title="On Photographs & Paintings"
+title="Photographs And Paintings"
 date=2022-10-18
 +++
 
