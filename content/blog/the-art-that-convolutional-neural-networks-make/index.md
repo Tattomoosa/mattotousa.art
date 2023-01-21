@@ -1,42 +1,46 @@
 +++
-title="The Art of Convolutional Neural Networks"
+title="The Art That Machines Make"
 date=2023-01-14
 +++
 
-It's always good when the tools to create art get more accessable.
-"More accessable" generally just meaning "cheaper", but the accessability is what matters.
-Another way to make art "more accessable" is to literally make it less work to do.
-Think the advancement of photography technology, from complex and skilled development in darkrooms on film, to not even needing to own a camera because
-there's already one on the phone you already basically need to own for a myriad of
-other reasons.
+It's always good when the tools to create art get more accessible, right?
+"More accessible" often just means "cheaper", but the accessibility is what matters.
+Another way to make art "more accessible" is to make it easier.
+Think the advancement of camera technology, from complex and high-skill equipment 
+in darkrooms on film, to many of us able to take pretty decent photos without owning
+a dedicated camera.
 
-Currently, there's a debate centered on 'AI Art'.
-Specifically, the kind of images made algorithmically through convolutional
-neural networks (CNN) after they process what the experts call 'a metric fuckton' of input data.
+> Not talking smack about cameras, I have one, I love it, it takes way better pictures than my phone
+
+'AI Art' is a hot topic right now.
+Specifically, the kind of images made in convolutional
+neural networks after they process what the experts call 'a metric fuckton' of input data.
 The technology is really neat and the output is really impressive... so long as
-you don't care too much if your art real has human emotions or half-decent hands.
+you don't care too much if your art has real human emotions or hands.
 
-According to the naysayers in the debate, the big problem with 'AI Art' is copyright.
-See, in those huge sets of input data needed for a CNN to chew on to 'learn', every single image belongs to somebody in the eyes of the law.
+{{ captionimage(
+  url="./the-art-that-machines-make.jpg"
+  alt='A twisty turny mess of a painting hanging in a strange gallery'
+  caption='Generated using "The art machines make" as a prompt on deepai.org'
+) }}
 
-A big thing to understand is that convolutional neural networks are no more
-'intelligent' than any other algorithm.
-There's not really any evidence we've come meaningfully closer to general
+One big problem with 'AI Art' is copyright.
+See, in those huge sets of input data needed for a neural network to chew on to 'learn', every single image belongs to somebody in the eyes of the law.
+I don't love copyright. But it *tries* to make it harder to exploit artists
+and ensure they can profit off their work, which is good, because artists need profit to survive just like the rest of us.
+
+I would love to see copyright abolished but it's also kind of necessary for artists to survive in capitalism so it is what it is I guess.
+
+Convolutional neural networks are no more 'intelligent' than any other algorithm.
+There's not really any compelling evidence we've come meaningfully closer to general
 intelligence in the entire history of computing.
+Maybe we have, maybe we haven't, all we've really got are the vibes.
+But then again, all we've really got to 'prove' other people are intelligent are the vibes too.
+I am me, so it makes intuitive sense that you are you.
+But we have no such intuition about machines.
 
+But at some point it gets weird. I do believe AI techniques have a place in the
+creative process, but once the novelty wears off, does anyone really want to be
+told stories by machines?
 
-
-
-
-
-
-
-
-I would like to be for 'AI Art' because it does democratize the creative process
-of creating images.
-This means small creators who could use imagery but have no money and no connections and no resources and no visual art skills.
-That's a "more accessable" way to make art for sure.
-
-There are several processes of 'AI Art', but today the term almost exclusively used to refer
-to a very specific kind of art made by convolutional neural networks after they
-process what the experts call 'a metric fuckton' of input 'learning' data.
+I mean, don't we tell stories to connect to people?

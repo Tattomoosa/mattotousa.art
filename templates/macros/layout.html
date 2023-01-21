@@ -1,7 +1,12 @@
 {% macro header() %}
 <header style="position: absolute; z-index: 9999;">
   <div class="container flex">
+    <!--
     <a href="/" class="nav-logo">Matt O'Tousa</a>
+    -->
+    <a href="/">
+      <img class="nav-logo" src="/homepage-images/signature.png" />
+    </a>
     <div class="flex-spacer"></div>
     <ul class="nav-links">
       <li>
@@ -14,9 +19,7 @@
         <a class="nav-link-text" href="/about">About</a>
       </li>
       <li>
-        <a class="icon-link nav-link-text" href="https://www.instagram.com/mattotousa/">
-          <i class="lab la-instagram"></i>
-        </a>
+        <a class="nav-link-text" href="/links">Links</a>
       </li>
     </ul>
   </div>
@@ -28,21 +31,14 @@
   <div class="container flex">
     <ul class="nav-links">
       <li>
+        <!--
         <a class="icon-link nav-link-text" href="https://www.instagram.com/mattotousa/">
           <i class="lab la-instagram"></i>
         </a>
+      -->
       </li>
     </ul>
     <div class="flex-spacer"></div>
-    <ul class="nav-links">
-      <li>
-        <a class="icon-link nav-link-text name " href="https://www.instagram.com/mattotousa/">
-          <i>Matt O'Tousa</i>
-        </a>
-      </li>
-      <li>
-      </li>
-    </ul>
   </div>
 </footer>
 {% endmacro footer %}

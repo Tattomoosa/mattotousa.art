@@ -26,7 +26,7 @@
                 {{ page.extra.medium }} on {{ page.extra.canvas }}
               </p>
             </div>
-          {# {{ page.content | safe }} #}
+          {{ page.content | safe }}
           </div>
         </div>
       </div>
@@ -39,7 +39,6 @@
   import Scroller from "/scripts/Scroller.js";
 
   const scroller = new Scroller(".scroller")
-  console.log(scroller.parentEl)
 </script>
 
 

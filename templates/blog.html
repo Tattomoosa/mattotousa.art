@@ -3,13 +3,13 @@
 {% block content %}
 <div class="blog-page-container">
     <div class="container page-height">
-        <div style="height: 50px;"></div>
+        <div style="height: 100px;"></div>
         <ul class="blog-post-links">
             {% for page in section.pages %}
             <li class="blog-post-link">
                 <a href="{{ page.permalink | safe }}">
                     {{page.title}}
-                </a>&nbsp;|&nbsp;
+                </a><div class="separator">//</div>
             </li>
             {% endfor %}
         </ul>

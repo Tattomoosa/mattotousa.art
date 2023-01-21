@@ -1,7 +1,8 @@
 @import "./_variables.scss";
 
 html {
-  font-family: "Lora", serif;
+  // font-family: "Lora", serif;
+  font-family: "Overpass", monospace;
 }
 
 h1,
@@ -10,7 +11,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lora", serif;
+  // font-family: "Lora", serif;
+  font-family: "Overpass", monospace;
   line-height: 0.8;
 }
 
@@ -37,15 +39,20 @@ footer {
   }
 }
 
-.nav-logo {
-  font-family: "Lora", serif;
-  // font-family: "Staatliches";
-  text-decoration: none;
-  font-size: 32px;
-  color: $header-color;
-  &:visited {
-    color: $header-color;
-  }
+// .nav-logo {
+//   font-family: "Lora", serif;
+//   // font-family: "Overpass", monospace;
+//   text-decoration: none;
+//   font-size: 32px;
+//   color: $header-color;
+//   &:visited {
+//     color: $header-color;
+//   }
+// }
+
+img.nav-logo {
+  height: 40px;
+  margin-top: 5px;
 }
 
 header {

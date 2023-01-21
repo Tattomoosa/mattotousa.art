@@ -1,6 +1,4 @@
 +++
 title="Links"
-template="about.html"
+template="links.html"
 +++
-
-HELLO
