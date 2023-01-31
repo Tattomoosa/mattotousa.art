@@ -8,20 +8,55 @@
       <img class="nav-logo" src="/homepage-images/signature.png" />
     </a>
     <div class="flex-spacer"></div>
-    <ul class="nav-links">
-      <li>
-        <a class="nav-link-text" href="/">Gallery</a>
-      </li>
-      <li>
-        <a class="nav-link-text" href="/blog">Blog</a>
-      </li>
-      <li>
-        <a class="nav-link-text" href="/about">About</a>
-      </li>
-      <li>
-        <a class="nav-link-text" href="/links">Links</a>
-      </li>
-    </ul>
+    <nav role="navigation">
+      <ul class="nav-links" id="header-nav-links">
+        <li>
+          <a class="nav-link-text" href="/">Gallery</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/blog">Blog</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/about">About</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/links">Links</a>
+        </li>
+      </ul>
+
+      <button id="nav-toggle" aria-expanded="false" aria-controls="header-nav-links">
+				<i id="nav-icon"></i>
+				<span>Menu</span>
+			</button>
+
+      <script defer>
+				// only have toggle button if javascript is enabled --
+				// otherwise, nav will be shown anyway
+				const navToggle = document.querySelector("#nav-toggle");
+				navToggle.classList.add("enabled");
+
+				// draw icon
+				const navIcon = document.querySelector("#nav-icon");
+				navIcon.classList.add("las", "la-bars");
+				// make button work
+				navToggle.addEventListener("click", () => {
+					const isActive = navLinks.classList.toggle("is-active")
+					if (isActive) {
+						navIcon.className = "las la-times"
+						navToggle.setAttribute('aria-expanded', 'true');
+					} else {
+						navIcon.className = "las la-bars"
+						navToggle.setAttribute('aria-expanded', 'false');
+					}
+				});
+
+				// if javascript is enabled, hide navLinks by default
+				const navLinks = document.querySelector("#header-nav-links");
+				navLinks.classList.remove("is-active");
+			</script>
+
+
+    </nav>
   </div>
 </header>
 {% endmacro header %}
