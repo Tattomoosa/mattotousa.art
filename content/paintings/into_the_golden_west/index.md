@@ -1,6 +1,6 @@
 +++
 title="Into The Golden West"
-date="2022-07-01"
+date="2022-08-26"
 [extra]
 medium="oil"
 canvas="canvas"
