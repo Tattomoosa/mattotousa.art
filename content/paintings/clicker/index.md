@@ -1,5 +1,5 @@
 +++
-title="Cordyceps Brain Infection, stage 3: ‘Clicker’"
+title="CBI, stage 3: ‘Clicker’"
 date="2022-12-29"
 [extra]
 medium="oil"
