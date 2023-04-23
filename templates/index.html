@@ -6,10 +6,10 @@
 
 <div class="homepage scroller">
   <div class="container">
-  {% set paintings_section = get_section(path="paintings/_index.md") %}
-  {% for page in paintings_section.pages %}
-  {% set image_path = page.path ~ 'img.png' %}
-  <section class="page-height" id="{{ page.title }}">
+    {% set paintings_section = get_section(path="paintings/_index.md") %}
+    {% for page in paintings_section.pages %}
+    {% set image_path = page.path ~ 'img.png' %}
+    <section class="page-height" id="{{ page.title }}">
       <div class="center-vertically art-scroller-parent">
         <div class="flex artwork">
           {{ images::framed_img(src=image_path, width=page.extra.width, height=page.extra.height) }}
@@ -21,17 +21,17 @@
             </h1>
             <div class="about-text">
               <p>
-                {{ page.date }} <br/>
-                {{ page.extra.width }}x{{ page.extra.height }} 
+                {{ page.date }} <br />
+                {{ page.extra.width }}x{{ page.extra.height }}
                 {{ page.extra.medium }} on {{ page.extra.canvas }}
               </p>
             </div>
-          {# {{ page.content | safe }} #}
+            {# {{ page.content | safe }} #}
           </div>
         </div>
       </div>
-  </section>
-  {% endfor %}
+    </section>
+    {% endfor %}
   </div>
 </div>
 

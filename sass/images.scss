@@ -1,4 +1,5 @@
 $matte-size: 18px;
+$matte-size-mobile: 8px;
 $matte-border: 2px;
 $frame-border: 2px;
 $frame-size: 6px;
@@ -23,6 +24,10 @@ $frame-size: 6px;
 		border: $frame-border solid #222;
 		border-top-color: #111;
 		border-bottom-color: #444;
+		@media screen and (max-width: 600px) {
+			padding: $matte-size-mobile;
+		}
+		
 	}
 
 	.inset-shadow {
@@ -37,11 +42,18 @@ $frame-size: 6px;
 		// why????
 		// bottom: calc(#{$matte-size} + #{$matte-border})
 		bottom: $matte-size + $matte-border + $frame-border;
+		@media screen and (max-width: 600px) {
+			inset: $matte-size-mobile solid #ccc;
+		}
 	}
 
 	.image {
 		max-width: 100%;
 		max-height: 100%;
+		@media screen and (max-width: 600px) {
+			width: 50%;
+			height: 50%;
+		}
 	}
 
 	/*
