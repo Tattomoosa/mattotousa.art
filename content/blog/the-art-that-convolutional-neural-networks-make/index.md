@@ -24,26 +24,29 @@ you don't care too much if your art has human emotion or decent looking hands.
   caption='Generated using "The art machines make" as a prompt on deepai.org'
 ) }}
 
-One big problem with 'AI Art' is copyright.
+One big problem that comes up a lot with 'AI Art' is copyright.
 See, in those huge sets of input data needed for a neural network to chew on to 'learn', every single image belongs to somebody in the eyes of the law.
 I don't love copyright. But it *tries* to make it harder to exploit artists
-and ensure they can profit off their work, which is good, because artists need profit to survive just like the rest of us.
-(I would love to see copyright abolished but there are a lot of other more important things that would need to happen first!)
+and ensure they can profit off their work, which is good, because artists
+unfortunately do still need to eat.
+(I would love to see copyright abolished but there are a lot of other more important things that would need to happen first)
 
 Convolutional neural networks are no more 'intelligent' than any other algorithm.
 There's not really any compelling evidence we've come meaningfully closer to creating
 general intelligence in the entire history of forever.
-Industrial futurists dreamed of brains made of gears after all.
-The way we look at creating a brain through sheer computation may seem just as ridiculous
-to people someday.
+Industrial futurists dreamed of brains made of gears, after all.
+The way we look at creating a brain through sheer computation may
+seem just as ridiculous to people someday.
 
-The tricky part of evaluating non-human intelligence is that all we've really got are the vibes.
-But then again, all we've really got to 'prove' humans are even intelligent are the vibes.
-I am me, so it makes intuitive sense that you are you.
-But we have no such intuition about machines.
+The tricky part of evaluating non-human intelligence is that all we've really
+got to go off are the vibes.
+But then again, all we've really ever had to 'prove' humans are even intelligent
+are the vibes.
+I am me, so it makes an intuitive sense that you are you.
+Whereas we have no such intuition about machines.
 
-At some point it gets weird, though. I do believe AI techniques have a place in the
-creative process, but once the novelty wears off, does anyone really want to be
+I do believe AI techniques have a place in the creative process,
+but once the novelty wears off, does anyone really want to be
 told stories by machines?
 
-Don't we tell stories to connect to people?
+I mean, don't we tell stories to connect to people?
