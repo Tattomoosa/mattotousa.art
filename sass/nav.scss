@@ -6,12 +6,17 @@
   }
 }
 
+header {
+  background: white;
+}
+
 nav {
   #nav-toggle {
     display: none;
 		border: none;
     span {
       position: absolute;
+      background: white;
       clip: rect(1px, 1px, 1px, 1px);
       padding: 0;
       border: 0;
@@ -40,7 +45,7 @@ nav {
       top: 5px;
       right: 4px;
       position: absolute;
-      background: transparent;
+      // background: transparent;
       padding-left: 1px;
       width: 44px;
       height: 38px;
@@ -62,9 +67,14 @@ nav {
         right: 0;
         width: 100%;
         height: auto;
+        background: white;
         .nav-link-item {
           background: $bg-color;
           border-bottom: 1px solid $nav-line;
+          width: 100%;
+        }
+        .nav-link-text {
+          width: 100%;
         }
         box-shadow: 0 10px 10px rgba(black, 0.2);
       }
@@ -77,5 +87,48 @@ nav {
         width: 100%;
       }
     }
+  }
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: $nav-height;
+}
+
+.nav-link-text {
+  display: inline-block;
+  color: $text-color;
+  text-decoration: none;
+  line-height: $nav-height;
+  margin-left: 10px;
+  font-family: "Overpass", monospace;
+  &:visited {
+    color: $text-color;
+  }
+  &:hover {
+    color: $hover-link;
+  }
+  &:active {
+    color: $active-link;
+  }
+  &.nav-link-active {
+    color: $active-link;
+  }
+  @media screen and (min-width: $break-to-mobile) {
+    transition-property: transform, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+    /*
+    &:hover {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+    &:active {
+      transition-duration: 0.1s;
+      transform: scale3d(1.2, 1.2, 1) rotate(5deg);
+    }
+    */
   }
 }

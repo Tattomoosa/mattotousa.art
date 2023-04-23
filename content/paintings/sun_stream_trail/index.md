@@ -7,3 +7,5 @@ canvas="canvas"
 width=11
 height=14
 +++
+
+Welcome home, day dreamer...

@@ -7,3 +7,5 @@ canvas="canvas"
 width=16
 height=20
 +++
+
+"When you gaze into \[yourself\]... \[yourself\] also gazes into you" - Friedrich Neitzche

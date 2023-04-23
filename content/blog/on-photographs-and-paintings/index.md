@@ -1,5 +1,5 @@
 +++
-title="Of Photographs and Paintings"
+title="Photographs and Paintings"
 date=2022-10-18
 +++
 
@@ -13,25 +13,18 @@ but I have really enjoyed going out and doing photography.
 It's interesting to me as a relative beginner to it thinking about some
 of the ways it is and isn't like painting.
 
-There is a bit of a sense that historically photographs *replaced*
-paintings.
-This is not really true, illustration was the actually primary way most families did portraits
-or history was documented.
-For much of its history, painters were the tools of the very rich.
-But photography did have a huge impact on painting.
-I think, among painters, there was a sense that photographs actually
-set painting free.
-Not right away, for a time the Impressionists were iconoclasts, rebels daring
-to go against the great traditions of painting.
-
-But I've noticed something really interesting when people
+I've noticed something really interesting when people
 describe paintings that they don't ever seem to for photographs --
 seeing a painting of the sea, they say may they can taste the salt,
 or feel the wind.
 These are sensations that neither a painting or a photograph can make real,
 but for some reason people seem to *feel* paintings more.
 
-So an aspect of the magic of painting is that painters can capture more than what is visual.
+> "Photorealistic" art did not exist before photographs.
+> Photographs have in a very true sense defined what reality looks like to us now.
+> Our eyes do not actually see the same as cameras do
+
+So an aspect of the magic of painting is that painters can capture more than what is there in an image.
 There's another kind of magic in painting too, though.
 There is a connection, per brush stroke, since each one says something of both
 the subject and the painter.
@@ -53,8 +46,8 @@ That's pretty cool too.
 Earlier in my life I admired effort, and painting seems like a lot more effort to
 produce an image than a photograph.
 But, besides being nonsense
-(a photograph can take a lot of effort and a painting very little, after all),
-that's a terrible criteria to try and judge by.
+(a photograph can take a lot of effort and a painting very little, I have learned this!),
+that's a terrible criteria to try and judge anything by.
 Some of my best paintings flowed out of me with very little effort at all,
 and some I've worked and re-worked and I'm still not particularly happy with them.
 
@@ -63,4 +56,4 @@ and it doesn't matter how much effort it is,
 or how many people like it,
 or if they think it's deep or not.
 It's just good to make it.
-I feel like it makes life brighter.
+It makes life brighter.

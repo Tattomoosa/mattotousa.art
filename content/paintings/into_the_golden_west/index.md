@@ -8,7 +8,4 @@ width=14
 height=11
 +++
 
-DATE IS WRONG
-SIZE IS WRONG
-
-"I hate to see you leave, but I love to watch you go" long long "I hate to see you leave, but I love to watch you go" long long "I hate to see you leave, but I love to watch you go" long long "I hate to see you leave, but I love to watch you go" long long "I hate to see you leave, but I love to watch you go" long long SO LONG SO LONG
+I hate to see you leave, but I love to watch you go...

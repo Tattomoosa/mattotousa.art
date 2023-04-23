@@ -7,3 +7,5 @@ canvas="canvas"
 width=4
 height=4
 +++
+
+A very difficult portrait to pose for

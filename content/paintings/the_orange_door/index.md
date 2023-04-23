@@ -7,3 +7,5 @@ canvas="canvas"
 width=24
 height=30
 +++
+
+Do not mourn the Dream when the Day comes

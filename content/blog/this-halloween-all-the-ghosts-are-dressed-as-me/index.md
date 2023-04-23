@@ -1,6 +1,7 @@
 +++
 title="This Halloween All the Ghosts are Dressed as Me"
 date=2022-10-26
+draft=true
 +++
 
 > The following contains spoilers for Kentucky Route Zero
