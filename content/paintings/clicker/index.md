@@ -8,5 +8,10 @@ width=8
 height=10
 +++
 
-"Those things out there... what if the people are still inside? What if they're
-trapped in there, without any control of their body?"
+"Those things out there...
+
+What if the people are still inside?
+
+What if they're trapped in there,
+
+without any control of their body?"

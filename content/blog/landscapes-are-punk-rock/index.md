@@ -1,5 +1,5 @@
 +++
-title="Punk Rock and Landscapes"
+title="Punk Rock, Landscapes"
 date=2023-02-15
 +++
 

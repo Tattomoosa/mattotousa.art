@@ -11,3 +11,13 @@ ul.links {
 		text-decoration: none;
 	}
 }
+@media screen and (max-width: 700px) {
+	ul.links {
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 600px) {
+	ul.links {
+		font-size: 34px;
+	}
+}

@@ -1,13 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<div class="container">
-	<div style="height: 200px;"></div>
-	<div class="about-content">
-		<h1>{{ page.title }}</h1>
-		{{ page.content | safe }}
-	</div>
+<div class="blog-post-container">
+    <div class="container">
+        <div class="blog-post">
+            <div class="blog-heading" style="padding-top: 120px">
+							  <div style="text-align: center; margin-bottom: 60px;">
+									<img src="./about/portrait.png" alt="HI" style="border-radius: 50%; margin: auto; width: 160px; height: 160px; border: 5px solid white;"/>
+								</div>
+                <h1>{{ page.title }}</h1>
+                <div class="date">{{ page.date }}</div>
+            </div>
+            <div class="markdown-content">
+                {{ page.content | safe }}
+            </div>
+        </div>
+    </div>
 </div>
-
 {% endblock content %}

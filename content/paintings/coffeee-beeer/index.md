@@ -8,4 +8,6 @@ width=24
 height=30
 +++
 
-Beyond the door, is it the same place when the people are gone?
+Beyond the door, is it the same place
+
+when the people are gone?

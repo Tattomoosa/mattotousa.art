@@ -46,9 +46,10 @@ ul.blog-post-links {
 
 .blog-heading {
   margin: 80px 0 40px;
+  padding-top: 240px;
 
   h1 {
-    margin-top: 240px;
+    // margin-top: 240px;
     font-size: 40px;
     line-height: 1.2;
     font-weight: bold;
@@ -64,7 +65,7 @@ ul.blog-post-links {
 }
 
 .markdown-content {
-  font-size: 18px;
+  font-size: 16px;
   color: #444;
   p {
     line-height: 1.8;
