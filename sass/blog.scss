@@ -24,6 +24,12 @@ ul.blog-post-links {
     font-weight: bold;
     a {
       text-decoration: none;
+      color: black;
+      margin: 0;
+      &:hover {
+        color: white;
+        background-color: black;
+      }
     }
     .separator {
       display: inline;
@@ -79,7 +85,7 @@ ul.blog-post-links {
   blockquote {
     background: rgba(black, .04);
     border-radius: 5px;
-    padding: 24px 12px 24px 40px;
+    padding: 24px 24px 24px 40px;
     margin: 40px 20px;
     box-shadow: inset 0 0 4px 4px rgba(black, 0.02);
     .quote-attribution {
