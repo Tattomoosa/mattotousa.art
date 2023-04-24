@@ -1,5 +1,5 @@
 +++
-title="Matt O'Tousa is a painter"
+title="Matt O'Tousa is a Painter"
 template="about.html"
 +++
 
