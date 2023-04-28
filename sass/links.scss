@@ -1,3 +1,6 @@
+@import "./_variables.scss";
+
+$spacing: 16px;
 ul.links {
 	margin: auto;
 	position: absolute;
@@ -6,6 +9,9 @@ ul.links {
 	transform: translate(-50%, -50%);
 	list-style-type: none;
 	font-size: 48px;
+	padding: $spacing;
+	background: $bg-color;
+	padding-bottom: 0;
 	a {
 		font-style: normal;
 		text-decoration: none;
@@ -14,7 +20,7 @@ ul.links {
 		width: 90vw;
 		max-width: 400px;
 		padding: 10px 40px;
-		margin-bottom: 10px;
+		margin-bottom: $spacing;
 		color: white;
 		&:hover {
 			background: #555;
@@ -30,4 +36,17 @@ ul.links {
 	ul.links {
 		font-size: 34px;
 	}
+}
+.fill {
+	position: absolute;
+	inset: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+}
+.bg-img {
+	min-width: 100vw;
+	min-height: 100vh;
+	margin: auto;
+	background-position: center;
 }

@@ -7,7 +7,9 @@
 }
 
 header {
-  background: white;
+  background: rgba($bg-color, 1);
+  border-bottom: 1px solid $nav-line;
+  position: fixed;
 }
 
 nav {
@@ -16,8 +18,7 @@ nav {
 		border: none;
     span {
       position: absolute;
-      background: white;
-      clip: rect(1px, 1px, 1px, 1px);
+      background: $bg-color;
       padding: 0;
       border: 0;
       height: 1px;
@@ -41,17 +42,24 @@ nav {
       display: block;
     }
     #nav-toggle.enabled {
+      span {
+        background-color: black;
+      }
       display: block;
       top: 5px;
       right: 4px;
       position: absolute;
       // background: transparent;
+      background: black;
       padding-left: 1px;
       width: 44px;
       height: 38px;
-      color: $nav-line;
+      color: $bg-color;
       .las {
         font-size: 28px;
+      }
+      &:hover {
+        background: #444;
       }
     }
 

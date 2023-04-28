@@ -18,16 +18,17 @@
       {% for page in paintings_section.pages %}
         {% set image_path = page.path ~ 'img.png' %}
         {% set image_thumbnail = resize_image(path=image_path, width=0, height=260, op="fit_height") %}
+        {% set image_hd  = resize_image(path=image_path, width=1080, height=1080, op="fit", format="webp") %}
         <label for="{{image_path}}">
           <li>
-            <img src="{{image_thumbnail.url}}" loading="lazy" />
+            <img src="{{image_thumbnail.url}}"/>
             <input type="checkbox" style="display: none" id="{{image_path}}"/>
 
             <!-- on click detail overlay --> 
             <div id="{{image_path}}" class="overlay">
               <div class="modal">
                 <div class="content-container">
-                  <img src="{{image_path}}" loading="lazy"/>
+                  <img src="{{image_hd.url}}" loading="lazy"/>
                   <div class="page-content">
                     <h1>
                       {{ page.title }}

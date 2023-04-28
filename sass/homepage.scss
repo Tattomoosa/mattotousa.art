@@ -28,7 +28,7 @@ input:not(:checked)+div {
 	z-index: 9999;
 	position: fixed;
 	inset: 0;
-	background-color: white;
+	background-color: $bg-color;
 	.modal {
 		// width: 800px;
 		// height: 800px;

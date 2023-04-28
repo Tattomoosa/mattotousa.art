@@ -2,9 +2,9 @@
 
 {% block content %}
 <div class="blog-page-container">
-    <div class="container page-height">
-        <div style="height: 100px;"></div>
+    <div class="container">
         <ul class="blog-post-links">
+            <div style="height: 100px;"></div>
             {% for page in section.pages %}
             <li class="blog-post-link">
                 <a href="{{ page.permalink | safe }}">
