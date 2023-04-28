@@ -53,18 +53,19 @@ ul.blog-post-links {
 .blog-heading {
   // margin: 80px 0 40px;
   padding-top: 140px;
+  margin-bottom: 50px;
 
   h1 {
     // margin-top: 240px;
     font-size: 40px;
     line-height: 1.2;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 14px;
   }
 
   .date {
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 8px;
     margin-top: -6px;
     font-family: "Overpass", monospace;
     color: rgba(black, 0.6)
@@ -132,4 +133,42 @@ ul.blog-post-links {
     padding: 0;
   }
   
+}
+
+.chat-bubble {
+  max-width: 60%;
+  margin: 10px 0;
+  padding: 20px;
+  position: relative;
+  color: white;
+  display: inline-block;
+  &.left {
+    background: #334;
+    &:after {
+      left: 0;
+      border-bottom: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid black;
+    }
+  }
+  &.right {
+    float: right;
+    background: #668;
+    &:after {
+      right: 0;
+      border-bottom: 20px solid transparent;
+      border-left: 20px solid transparent;
+      border-top: 20px solid black;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    top: 100%;
+
+    clear: both;
+  }
 }

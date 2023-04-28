@@ -8,4 +8,4 @@ width=11
 height=14
 +++
 
-Welcome home, day dreamer...
+Welcome home, day dreamer

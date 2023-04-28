@@ -8,4 +8,4 @@ width=14
 height=11
 +++
 
-I hate to see you leave, but I love to watch you go...
+I hate to see you leave, but I love to watch you go
