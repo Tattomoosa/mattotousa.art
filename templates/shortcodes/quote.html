@@ -3,11 +3,7 @@
 		"{{ text }}"
 	</p>
 	<div class="quote-attribution">
-		{%- if author -%}
-			&mdash; {{ author }}
-		{% endif %}
-		{%- if work -%}
-			, <em>{{ work }}</em>
-		{% endif %}
+		<!-- one line so no spaces show up between-->
+		{%- if author -%}&mdash; {{ author }}{% endif %}{%- if work -%}, <em>{{ work }}</em>{% endif %}
 	</div>
 </blockquote>

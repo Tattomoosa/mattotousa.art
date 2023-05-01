@@ -1,5 +1,5 @@
 +++
-title="The Art Machines Make"
+title="The Art That Machines Make"
 date=2023-01-14
 +++
 
@@ -10,7 +10,7 @@ Think the advancement of camera technology, from complex and high-skill equipmen
 in darkrooms on film, to many of us able to take pretty decent photos from a phone
 we already need to have for a thousand other reasons.
 
-'AI Art' is a hot topic right now.
+'AI Art' has a lot of momentum right now.
 Specifically, the kind of images made in convolutional
 neural networks after they process and 'learn' on what the experts call 'a metric fuckton' of input data.
 The technology is really neat and the output is really impressive... so long as

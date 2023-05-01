@@ -1,12 +1,22 @@
 {%- if left -%}
-<div>
+<div style="height: 40px"></div>
+<div class="chat-bubble-container">
 	<div class="chat-bubble left">
+		<div class="chat-bubble-author left">
+			{{ left_auth }}
+		</div>
 		{{ left }}
 	</div>
 </div>
 {% endif %}
 {%- if right -%}
-<div class="chat-bubble right">
-	{{ right }}
+<div class="chat-bubble-container right">
+	<div class="chat-bubble right">
+		<div class="chat-bubble-author right">
+			{{ right_auth }}
+		</div>
+		{{ right }}
+	</div>
 </div>
+<div style="height: 40px"></div>
 {% endif %}

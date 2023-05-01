@@ -1,5 +1,5 @@
 +++
-title="Photographs, Paintings"
+title="Photographs Vs Paintings"
 date=2022-10-18
 +++
 

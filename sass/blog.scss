@@ -73,6 +73,7 @@ ul.blog-post-links {
 }
 
 .markdown-content {
+  font-family: "Lora", serif;
   font-size: 16px;
   color: #444;
   p {
@@ -86,15 +87,24 @@ ul.blog-post-links {
 
   blockquote {
     background: rgba(black, .04);
-    border-radius: 5px;
     padding: 24px 24px 24px 40px;
-    margin: 40px 20px;
-    box-shadow: inset 0 0 4px 4px rgba(black, 0.02);
+    margin: 40px 0;
+    // margin: 40px 20px;
+    // box-shadow: inset 0 0 4px 4px rgba(black, 0.02);
+    position: relative;
     .quote-attribution {
       text-align: right;
       margin-top: -10px;
       margin-right: 24px;
       font-size: 14px;
+    }
+    &:after {
+      content: '\201C';
+      position: absolute;
+      left: 10px;
+      top: -20px;
+      font-size: 64px;
+      color: #bbc;
     }
   }
 }
@@ -142,6 +152,7 @@ ul.blog-post-links {
   position: relative;
   color: white;
   display: inline-block;
+  font-family: sans-serif;
   &.left {
     background: #334;
     &:after {
@@ -171,4 +182,28 @@ ul.blog-post-links {
 
     clear: both;
   }
+}
+
+.chat-bubble-container {
+  width: 100%;
+  height: 100px;
+}
+
+.chat-bubble-author {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Overpass Mono", monospace;
+  top: -15px;
+  font-size: 12px;
+  color: #99a;
+  &.left {
+    left: 0;
+  }
+  &.right {
+    right: 0;
+  }
+}
+
+.hide {
+  display: none;
 }
