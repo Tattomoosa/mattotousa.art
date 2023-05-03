@@ -1,5 +1,5 @@
 +++
-title="To the Mind-flayer"
+title="The Mind-Flayer"
 date=2023-04-28
 [extra]
 medium="oil"
