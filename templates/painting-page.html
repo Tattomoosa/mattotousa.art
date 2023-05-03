@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set image_path = page.path ~ 'img.png' %}
+{% set image_hd = resize_image(path=image_path, width=1080, height=1080, op="fit", format="webp") %}
+<div id="{{image_path}}" class="overlay">
+	<a href="/" style="position: absolute; inset: 0"></a>
+	<div class="modal">
+		<div class="content-container">
+			<a href="{{image_path}}">
+				<img src="{{image_hd.url}}" loading="lazy" />
+			</a>
+			<div class="page-content">
+				<h1>
+					{{ page.title }}
+				</h1>
+				<div class="about-text">
+					<p>
+						{{ page.date }} |
+						{{ page.extra.width }}x{{ page.extra.height }}" |
+						{{ page.extra.medium }} on {{ page.extra.canvas }}
+					</p>
+				</div>
+				{{ page.content | safe }}
+				{% if "buylink" in page.extra %}
+				<br />
+				<a class="buy-print-link" href="{{ page.extra.buylink }}">Buy Print</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

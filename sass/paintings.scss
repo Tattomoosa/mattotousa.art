@@ -1,0 +1,66 @@
+@import "./_variables.scss";
+
+.overlay {
+	z-index: 9999;
+	position: fixed;
+	inset: 0;
+	background-color: #eee;
+	.modal {
+		// width: 800px;
+		// height: 800px;
+		max-width: calc(100% - 10px);
+		max-height: calc(100% - 10px);
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		.content-container {
+			background: $bg-color;
+			padding: 20px;
+			text-align: center;
+			img {
+				max-height: calc(100vh - 340px);
+				max-width: 90vw;
+				object-fit: cover;
+				vertical-align: bottom;
+			}
+			.page-content {
+				margin-top: 20px;
+				text-align: left;
+				h1 {
+					font-style: italic;
+				}
+				.about-text {
+					color: #888;
+					display: inline-block;
+					margin: 10px 0;
+					font-size: 11px;
+				}
+				.quote-attribution {
+					text-align: right;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.modal {
+			.content-container {
+				img {
+					max-height: 60vh;
+					max-width: calc(100vw - 30px);
+				}
+
+				.page-content {
+					h1 {
+						font-size: 18px;
+					}
+
+					.about-text {
+						font-size: 12px;
+					}
+
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% import "macros/images.html" as images %}
+
+{% block content %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    var scrollpos = sessionStorage.getItem('scrollpos');
+    console.log(scrollpos)
+    if (scrollpos) {
+      // wait for images to load
+      Promise.all(
+        Array.from(document.images)
+          .filter(img => !img.complete)
+          .map(img => new Promise(resolve => {
+            img.onload = img.onerror = resolve;
+          }))
+      ).then(() => scrollTo(0, scrollpos))
+      sessionStorage.removeItem('scrollpos');
+    }
+  });
+
+  window.addEventListener("beforeunload", function (e) {
+    sessionStorage.setItem('scrollpos', window.scrollY);
+  });
+</script>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="container">
+  <ul class="gallery">
+    {% set paintings_section = get_section(path="gallery/_index.md") %}
+    {% for page in paintings_section.pages %}
+    {% set image_path = page.path ~ 'img.png' %}
+    {% set image_thumbnail = resize_image(path=image_path, width=0, height=260, op="fit_height") %}
+    <li>
+      <a href="{{ page.path }}" class="img-link">
+        <img src="{{image_thumbnail.url}}" />
+      </a>
+    </li>
+    </button>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock content %}

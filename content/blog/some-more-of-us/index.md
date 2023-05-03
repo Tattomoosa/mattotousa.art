@@ -5,4 +5,4 @@ draft=true
 +++
 
 Bleak and beautiful, *The Last of Us* series tells one of my favorite stories in
-any media. 
+any media.
