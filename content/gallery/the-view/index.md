@@ -8,6 +8,6 @@ width=24
 height=30
 +++
 
-Seeing the shapes in the clouds,
+Looking for shapes in the clouds,
 
-The shapes in the clouds see you too
+While the shapes in the clouds look for you

@@ -4,7 +4,9 @@
 {% set image_path = page.path ~ 'img.png' %}
 {% set image_hd = resize_image(path=image_path, width=1080, height=1080, op="fit", format="webp") %}
 <div id="{{image_path}}" class="overlay">
-	<a href="/" style="position: absolute; inset: 0"></a>
+	<a href="/" style="position: absolute; inset: 0">
+		<div class="back-button">x</div>
+	</a>
 	<div class="modal">
 		<div class="content-container">
 			<a href="{{image_path}}">

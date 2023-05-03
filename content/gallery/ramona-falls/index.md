@@ -8,4 +8,4 @@ width=16
 height=20
 +++
 
-The Earth has many secrets. Listen closely
+The Earth has many secrets. Listen closely or you may miss them

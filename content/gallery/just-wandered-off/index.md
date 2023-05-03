@@ -1,8 +1,8 @@
 +++
-title="In the Garden"
+title="Just Wandered Off"
 date=2023-04-20
 [extra]
-medium="oil"
+medium="black gesso, oil"
 canvas="canvas"
 width=12
 height=24
@@ -10,8 +10,10 @@ height=24
 
 Where did the dream go?
 
-Surely it was here
+Surely it was just here
 
-or there.
+or there
+
+<br/>
 
 or everywhere
