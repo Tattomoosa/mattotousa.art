@@ -25,7 +25,9 @@
       </ul>
 
       <button id="nav-toggle" aria-expanded="false" aria-controls="header-nav-links">
-				<i id="nav-icon"></i>
+        <div class="hamburger top"></div>
+        <div class="hamburger middle"></div>
+        <div class="hamburger bottom"></div>
 				<span>Menu</span>
 			</button>
 
@@ -36,16 +38,16 @@
 				navToggle.classList.add("enabled");
 
 				// draw icon
-				const navIcon = document.querySelector("#nav-icon");
-				navIcon.classList.add("las", "la-bars");
+				// const navIcon = document.querySelector("#nav-icon");
+				// navIcon.classList.add("las", "la-bars");
 				// make button work
 				navToggle.addEventListener("click", () => {
 					const isActive = navLinks.classList.toggle("is-active")
 					if (isActive) {
-						navIcon.className = "las la-times"
+						// navIcon.className = "las la-times"
 						navToggle.setAttribute('aria-expanded', 'true');
 					} else {
-						navIcon.className = "las la-bars"
+						// navIcon.className = "las la-bars"
 						navToggle.setAttribute('aria-expanded', 'false');
 					}
 				});

@@ -1,5 +1,5 @@
 +++
-title="The Nude Sucks, Actually"
+title="The Nude Kind of Sucks, Actually"
 date=2023-05-01
 draft=true
 +++
