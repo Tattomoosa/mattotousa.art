@@ -6,10 +6,7 @@ medium="oil"
 canvas="canvas"
 width=12
 height=24
+img="img.jpg"
 +++
 
-The great thing about monsters
-
-is you can kill them dead.
-
-(so unlike all they represent)
+I want to taste your awful thoughts

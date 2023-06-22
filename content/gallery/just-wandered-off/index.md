@@ -6,6 +6,7 @@ medium="black gesso, oil"
 canvas="canvas"
 width=12
 height=24
+img="img.jpg"
 +++
 
 Where did the dream go?

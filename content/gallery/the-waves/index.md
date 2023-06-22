@@ -6,6 +6,7 @@ medium="oil"
 canvas="canvas"
 width=30
 height=24
+img="img.jpg"
 +++
 
 They say that I have to work today,

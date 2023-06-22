@@ -35,7 +35,11 @@
   <ul class="gallery">
     {% set paintings_section = get_section(path="gallery/_index.md") %}
     {% for page in paintings_section.pages %}
+    {# TODO repeated logic in painting-page.html #}
     {% set image_path = page.path ~ 'img.png' %}
+    {% if "img" in page.extra %}
+      {% set image_path = page.path ~ page.extra.img %}
+    {% endif %}
     {% set image_thumbnail = resize_image(path=image_path, width=0, height=260, op="fit_height") %}
     <li>
       <a href="{{ page.path }}" class="img-link">

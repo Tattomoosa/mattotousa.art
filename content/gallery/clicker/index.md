@@ -6,6 +6,7 @@ medium="oil"
 canvas="canvas"
 width=8
 height=10
+img="img.jpg"
 +++
 
 "Those things out there...

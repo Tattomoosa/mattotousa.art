@@ -9,7 +9,7 @@ His work plays with traditional notions of composition
 and color expression.
 It tends to explore spaces:
 What was there already,
-what of us is there,
+what of us is reflected there,
 and what isn't there at all.
 
 Lately, he's been thinking about doors.
