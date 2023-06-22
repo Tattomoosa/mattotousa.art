@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt O'Tousa | Painter</title>
+    <meta name="description" content="Matt O'Tousa is a painter based in Portland, OR.">
+    <link rel="stylesheet" type="text/css" href=https://mattotousa.art/index.css>
+    <link rel="stylesheet" type="text/css" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+</head>
+
+<body class="no-js">
+    <!-- this makes adjusting css possible if js is present -->
+    <script>document.body.classList.remove('no-js');</script>
+
+    
+<header>
+  <div class="container flex">
+    <!--
+    <a href="/" class="nav-logo">Matt O'Tousa</a>
+    -->
+    <a href="/">
+      <img class="nav-logo" src="/homepage-images/signature.png" />
+    </a>
+    <div class="flex-spacer"></div>
+    <nav role="navigation">
+      <ul class="nav-links" id="header-nav-links">
+        <li>
+          <a class="nav-link-text" href="/">Gallery</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/blog">Blog</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/about">About</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/links">Links</a>
+        </li>
+      </ul>
+
+      <button id="nav-toggle" aria-expanded="false" aria-controls="header-nav-links">
+        <div class="hamburger top"></div>
+        <div class="hamburger middle"></div>
+        <div class="hamburger bottom"></div>
+				<span>Menu</span>
+			</button>
+
+      <script defer>
+				// only have toggle button if javascript is enabled --
+				// otherwise, nav will be shown anyway
+				const navToggle = document.querySelector("#nav-toggle");
+				navToggle.classList.add("enabled");
+
+				// draw icon
+				// const navIcon = document.querySelector("#nav-icon");
+				// navIcon.classList.add("las", "la-bars");
+				// make button work
+				navToggle.addEventListener("click", () => {
+					const isActive = navLinks.classList.toggle("is-active")
+					if (isActive) {
+						// navIcon.className = "las la-times"
+						navToggle.setAttribute('aria-expanded', 'true');
+					} else {
+						// navIcon.className = "las la-bars"
+						navToggle.setAttribute('aria-expanded', 'false');
+					}
+				});
+
+				// if javascript is enabled, hide navLinks by default
+				const navLinks = document.querySelector("#header-nav-links");
+				navLinks.classList.remove("is-active");
+			</script>
+
+
+    </nav>
+  </div>
+</header>
+
+
+    <div>
+        <!-- Per-page content -->
+        
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    var scrollpos = sessionStorage.getItem('scrollpos');
+    console.log(scrollpos)
+    if (scrollpos) {
+      // wait for images to load
+      Promise.all(
+        Array.from(document.images)
+          .filter(img => !img.complete)
+          .map(img => new Promise(resolve => {
+            img.onload = img.onerror = resolve;
+          }))
+      ).then(() => scrollTo(0, scrollpos))
+      sessionStorage.removeItem('scrollpos');
+    }
+  });
+
+  window.addEventListener("beforeunload", function (e) {
+    sessionStorage.setItem('scrollpos', window.scrollY);
+  });
+</script>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="container">
+  <ul class="gallery">
+    
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;a-dream-of-home&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.ca3876d36b05f61a.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;the-voyage&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.3364b321ca896308.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;mind-flayer&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.7b2319e47a20c23d.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;the-view&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.94b53e1fae050738.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;just-wandered-off&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.9fc4df7d9bc260e6.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;the-park&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.4a6003f158b6cb5f.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;clicker&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.ef9b6dcfc6ed9f9a.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;coffeee-beeer&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.8c0d0444530d41b6.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;the-orange-door&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.15dacffe24d39720.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;self-portrait-without-skin&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.44a408ff755135fa.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;sun-stream-trail&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.9f053ff473a4f714.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;ramona-falls&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.a56290cfe6d8bcef.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;the-waves&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.640044d81ab01c6f.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;new-morning&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.9304c615752ea30b.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+      
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;into-the-golden-west&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.b5140fe28c9973b8.jpg" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;introspeculation&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.1ce77a4ff61eb0f8.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;the-builder&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.a95ccb2c48e3b907.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;nier-brother&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.342ecb10bfd3e262.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;self-portrait-in-chicago&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.45059b0f5b82bb86.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;the-birth&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.d7387c4556ca6d0d.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;in-the-music&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.b48aff89beaabeee.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;lokke-sar-havre-i-dag&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.0cd55010f2d36134.png" />
+      </a>
+    </li>
+    </button>
+    
+    
+    
+    
+    
+    <li>
+      <a href="&#x2F;gallery&#x2F;self-portrait-with-machinery&#x2F;" class="img-link">
+        <img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.a5d139d7741c75dc.png" />
+      </a>
+    </li>
+    </button>
+    
+  </ul>
+</div>
+
+
+    </div>
+</body>
+</html>

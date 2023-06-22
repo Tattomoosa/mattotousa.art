@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt O'Tousa | Painter</title>
+    <meta name="description" content="Matt O'Tousa is a painter based in Portland, OR.">
+    <link rel="stylesheet" type="text/css" href=https://mattotousa.art/index.css>
+    <link rel="stylesheet" type="text/css" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+</head>
+
+<body class="no-js">
+    <!-- this makes adjusting css possible if js is present -->
+    <script>document.body.classList.remove('no-js');</script>
+
+    
+<header>
+  <div class="container flex">
+    <!--
+    <a href="/" class="nav-logo">Matt O'Tousa</a>
+    -->
+    <a href="/">
+      <img class="nav-logo" src="/homepage-images/signature.png" />
+    </a>
+    <div class="flex-spacer"></div>
+    <nav role="navigation">
+      <ul class="nav-links" id="header-nav-links">
+        <li>
+          <a class="nav-link-text" href="/">Gallery</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/blog">Blog</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/about">About</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/links">Links</a>
+        </li>
+      </ul>
+
+      <button id="nav-toggle" aria-expanded="false" aria-controls="header-nav-links">
+        <div class="hamburger top"></div>
+        <div class="hamburger middle"></div>
+        <div class="hamburger bottom"></div>
+				<span>Menu</span>
+			</button>
+
+      <script defer>
+				// only have toggle button if javascript is enabled --
+				// otherwise, nav will be shown anyway
+				const navToggle = document.querySelector("#nav-toggle");
+				navToggle.classList.add("enabled");
+
+				// draw icon
+				// const navIcon = document.querySelector("#nav-icon");
+				// navIcon.classList.add("las", "la-bars");
+				// make button work
+				navToggle.addEventListener("click", () => {
+					const isActive = navLinks.classList.toggle("is-active")
+					if (isActive) {
+						// navIcon.className = "las la-times"
+						navToggle.setAttribute('aria-expanded', 'true');
+					} else {
+						// navIcon.className = "las la-bars"
+						navToggle.setAttribute('aria-expanded', 'false');
+					}
+				});
+
+				// if javascript is enabled, hide navLinks by default
+				const navLinks = document.querySelector("#header-nav-links");
+				navLinks.classList.remove("is-active");
+			</script>
+
+
+    </nav>
+  </div>
+</header>
+
+
+    <div>
+        <!-- Per-page content -->
+        
+
+
+
+<div id="&#x2F;gallery&#x2F;self-portrait-without-skin&#x2F;img.png" class="overlay">
+	<a href="/" style="position: absolute; inset: 0">
+		<div class="back-button">x</div>
+	</a>
+	<div class="modal">
+		<div class="content-container">
+			<a href="&#x2F;gallery&#x2F;self-portrait-without-skin&#x2F;img.png">
+				<img src="https:&#x2F;&#x2F;mattotousa.art&#x2F;processed_images&#x2F;img.5b236d8594b3947e.webp" loading="lazy" />
+			</a>
+			<div class="page-content">
+				<h1>
+					Self Portrait Without Skin, Teeth, etc
+				</h1>
+				<div class="about-text">
+					<p>
+						2022-10-13 |
+						4x4" |
+						black gesso, oil on canvas
+					</p>
+				</div>
+				<p>A very difficult portrait to pose for</p>
+
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+    </div>
+</body>
+</html>

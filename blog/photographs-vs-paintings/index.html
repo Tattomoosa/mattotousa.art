@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt O'Tousa | Painter</title>
+    <meta name="description" content="Matt O'Tousa is a painter based in Portland, OR.">
+    <link rel="stylesheet" type="text/css" href=https://mattotousa.art/index.css>
+    <link rel="stylesheet" type="text/css" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+</head>
+
+<body class="no-js">
+    <!-- this makes adjusting css possible if js is present -->
+    <script>document.body.classList.remove('no-js');</script>
+
+    
+<header>
+  <div class="container flex">
+    <!--
+    <a href="/" class="nav-logo">Matt O'Tousa</a>
+    -->
+    <a href="/">
+      <img class="nav-logo" src="/homepage-images/signature.png" />
+    </a>
+    <div class="flex-spacer"></div>
+    <nav role="navigation">
+      <ul class="nav-links" id="header-nav-links">
+        <li>
+          <a class="nav-link-text" href="/">Gallery</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/blog">Blog</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/about">About</a>
+        </li>
+        <li>
+          <a class="nav-link-text" href="/links">Links</a>
+        </li>
+      </ul>
+
+      <button id="nav-toggle" aria-expanded="false" aria-controls="header-nav-links">
+        <div class="hamburger top"></div>
+        <div class="hamburger middle"></div>
+        <div class="hamburger bottom"></div>
+				<span>Menu</span>
+			</button>
+
+      <script defer>
+				// only have toggle button if javascript is enabled --
+				// otherwise, nav will be shown anyway
+				const navToggle = document.querySelector("#nav-toggle");
+				navToggle.classList.add("enabled");
+
+				// draw icon
+				// const navIcon = document.querySelector("#nav-icon");
+				// navIcon.classList.add("las", "la-bars");
+				// make button work
+				navToggle.addEventListener("click", () => {
+					const isActive = navLinks.classList.toggle("is-active")
+					if (isActive) {
+						// navIcon.className = "las la-times"
+						navToggle.setAttribute('aria-expanded', 'true');
+					} else {
+						// navIcon.className = "las la-bars"
+						navToggle.setAttribute('aria-expanded', 'false');
+					}
+				});
+
+				// if javascript is enabled, hide navLinks by default
+				const navLinks = document.querySelector("#header-nav-links");
+				navLinks.classList.remove("is-active");
+			</script>
+
+
+    </nav>
+  </div>
+</header>
+
+
+    <div>
+        <!-- Per-page content -->
+        
+<div class="blog-post-container">
+    <div class="container no-mobile-padding">
+        <div class="blog-post">
+            <div class="blog-heading">
+                <h1>Photographs Vs Paintings</h1>
+                <div class="date">2022-10-18</div>
+            </div>
+            <div class="markdown-content">
+                <blockquote>
+	<p>
+		"A painting is not a picture of an experience, but it is the experience."
+	</p>
+	<div class="quote-attribution">
+		<!-- one line so no spaces show up between-->&mdash; Mark Rothko
+	</div>
+</blockquote>
+<p>I got a camera to photograph paintings so I can make prints (someday).
+I don't think of myself as a photographer,
+but I have really enjoyed going out and doing it.
+It's interesting to me as a beginner and thinking about some
+of the ways it is and isn't like painting.</p>
+<p>There is something really interesting that happens sometimes when people
+describe paintings that they don't ever seem to do for photographs --
+seeing a painting of the sea, someone might say they can taste the salt,
+or feel the wind.
+These are sensations that neither a painting or a photograph can make real,
+but for some reason people do seem to <em>feel</em> paintings in ways that are not
+only visual.</p>
+<p>So an aspect of the magic of painting is that painters can capture more than what is there in an image.
+There's another kind of magic too, though, in what you can see of the process.
+There is a connection, per brush stroke, since each one says something of both
+the subject and the painter.
+John Berger sums it up pretty well:</p>
+<blockquote>
+	<p>
+		"...the paint, in which one follows the traces of the painter&#x27;s immediate
+   gestures.  This has the effect of closing the distance in time between the
+   painting of the picture and one&#x27;s own act of looking at it."
+	</p>
+	<div class="quote-attribution">
+		<!-- one line so no spaces show up between-->&mdash; John Berger, <em>Ways of Seeing</em>
+	</div>
+</blockquote>
+<p>In contrast, the magic of photography, I think, is knowing that the moment you
+are seeing is a real moment.
+Experienced by you through the photographer.
+That's pretty cool too.</p>
+<blockquote>
+<p>&quot;Photorealistic&quot; art did not exist before photographs.
+Photographs have in a very true sense defined what reality looks like to us now.
+Our eyes do not actually see the same as cameras do</p>
+</blockquote>
+<p>Earlier in my life I admired effort, and painting seems like a lot more effort to
+produce an image than a photograph.
+But, besides being nonsense
+(a photograph can take a lot of effort and a painting very little, I have learned this!),
+that's a terrible criteria to try and judge anything by.
+Some of my best paintings flowed out of me with very little effort at all,
+and some I've worked and re-worked and I'm still not particularly happy with them.</p>
+<p>There is no right way to make art,
+and it doesn't matter how much effort it is,
+or how many people like it,
+or if they think it's deep or not.
+It's just good to make it.
+It makes life brighter.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+</body>
+</html>
