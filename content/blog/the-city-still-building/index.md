@@ -1,7 +1,6 @@
 +++
 title="The City Building Still"
 date=2023-05-04
-draft=true
 +++
 
 The city was only half finished.
@@ -23,3 +22,5 @@ I think about this dream a lot.
 (although I haven't smoked a cigarette in a long time)
 Something about how familiar the sight of a half-constructed building is,
 but how uncanny a whole city of them feels.
+
+Maybe I'll paint it someday.

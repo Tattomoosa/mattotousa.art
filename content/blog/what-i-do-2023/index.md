@@ -1,7 +1,6 @@
 +++
 title="What I Do (v0.1)"
 date=2023-05-10
-draft=true
 +++
 
 Last October I was possessed by the ghost of Vincent Van Gogh,
