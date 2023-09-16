@@ -6,6 +6,7 @@ medium="oil"
 canvas="canvas"
 width=10
 height=20
+img="img.jpg"
 +++
 
 When it feels like the world is new
